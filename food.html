@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Waste Solutions</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="title-container">
+      <img src="./Food-Waste.jpg" alt="Food Waste Solutions Logo" class="logo">
+    </div>
+    <h1><i class="fas fa-leaf"></i> Food Waste Solutions</h1>
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#services">Our Services</a>
+      <a href="#partners">Corporate Benefits</a>
+      <a href="#donate">Donate Food</a>
+      <a href="#realTimeUpdates">Real Time Updates</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#calculator">Food Calculator</a>
+      <a href="#" id="darkModeToggle">Dark Mode</a>
+      <a href="#ngos">NGO Contacts</a>
+      <a href="#locations">Nearby Locations</a>
+      <a href="#faq">FAQ</a>
+      <a href="Login /Register" id="login-register">Login/Register</a> <!-- Add ID here -->
+    </nav>
+  </header>
+
+  <!-- Hero Section with Slideshow -->
+  <section id="hero">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="./image 1.jpg" alt="Sustainable Food Solutions">
+      </div>
+      <div class="mySlides fade">
+        <img src="./image 2.webp" alt="Minimizing Food Waste">
+      </div>
+      <div class="mySlides fade">
+        <img src="./img 2.jpg" alt="Corporate Sustainability">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We specialize in food waste management by helping organizations channel surplus food to those in need while promoting environmental sustainability.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <i class="fas fa-truck fa-3x"></i>
+        <h3>Food Pick-Up</h3>
+        <p>Seamless pick-up services for your surplus food.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-hand-holding-heart fa-3x"></i>
+        <h3>Drop-Off & Distribution</h3>
+        <p>We ensure the food reaches trusted community organizations.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-chart-line fa-3x"></i>
+        <h3>Sustainability Reports</h3>
+        <p>Receive impact reports to track your environmental footprint.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="partners">
+    <h2>Corporate Benefits</h2>
+    <p>Partnering with us helps your company reduce waste management costs, enhance community goodwill, and demonstrate a commitment to sustainability.</p>
+    <div class="corporate-benefits">
+      <div class="benefit">
+        <i class="fas fa-dollar-sign fa-3x"></i>
+        <h3>Cost Savings</h3>
+        <p>Reduce waste management costs through effective food waste solutions.</p>
+      </div>
+      <div class="benefit">
+        <i class="fas fa-handshake fa-3x"></i>
+        <h3>Community Goodwill</h3>
+        <p>Enhance your company's image by contributing to local communities in need.</p>
+      </div>
+      <div class="benefit">
+        <i class="fas fa-chart-line fa-3x"></i>
+        <h3>Sustainability Reports</h3>
+        <p>Get customized sustainability reports to showcase your efforts.</p>
+      </div>
+      <div class="benefit">
+        <i class="fas fa-trophy fa-3x"></i>
+        <h3>Positive Brand Image</h3>
+        <p>Enhance your brand image with a commitment to sustainability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Form Section -->
+  <section id="donate" class="animate">
+    <h2>Donate Food</h2>
+    <form id="donationForm" class="donation-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="5e96ec6a-73a9-495b-9f06-5ac9d914c925">
+      
+      <label for="companyName">Company Name:</label>
+      <input type="text" id="companyName" name="companyName" required>
+
+      <label for="contactPerson">Contact Person:</label>
+      <input type="text" id="contactPerson" name="contactPerson" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="pickupAddress">Pick-Up Address:</label>
+      <input type="text" id="pickupAddress" name="pickupAddress" required>
+
+      <label for="foodDetails">Food Details:</label>
+      <textarea id="foodDetails" name="foodDetails" rows="4" required></textarea>
+
+      <button type="submit">Submit Donation</button>
+    </form>
+    <p id="successMessage" style="display: none;">Thank you! Our team will be in touch shortly.</p>
+  </section>
+
+  <section id="realTimeUpdates">
+    <h2>Real-Time Updates</h2>
+    <ul id="updatesList">
+      <li>Update: Food collection drive started at XYZ location.</li>
+    </ul>
+  </section>
+  
+
+  <!-- Dashboard Section -->
+  <section id="dashboard">
+    <h2>Impact Dashboard</h2>
+    <div class="stats">
+      <div class="stat">
+        <i class="fas fa-utensils fa-3x"></i>
+        <p>Total Meals Served</p>
+        <h3>1,245,00</h3>
+      </div>
+      <div class="stat">
+        <i class="fas fa-seedling fa-3x"></i>
+        <p>CO2 Emissions Reduced</p>
+        <h3>5,670 Tons</h3>
+      </div>
+      <div class="stat">
+        <i class="fas fa-users fa-3x"></i>
+        <p>Volunteers Registered</p>
+        <h3>890</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food Waste Calculator -->
+  <section id="calculator">
+    <h2>Food Waste Calculator</h2>
+    <form id="calculatorForm">
+      <label for="foodAmount">Enter Food Weight (kg):</label>
+      <input type="number" id="foodAmount" name="foodAmount" required>
+      <button type="button" onclick="calculateImpact()">Calculate Impact</button>
+    </form>
+    <p id="calculationResult"></p>
+  </section>
+
+  <section id="ngos">
+    <h2>Partner NGOs</h2>
+    <div class="ngo-list">
+      <div class="ngo">
+        <h3>Helping Hands Foundation</h3>
+        <p>Contact: +123 456 7890</p>
+      </div>
+      <div class="ngo">
+        <h3>Food For All</h3>
+        <p>Contact: +987 654 3210</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="locations">
+    <h2>Nearby Donation Locations</h2>
+    <p>For a detailed map view, please use the button below:</p>
+
+    <a href="https://maps.windows.com/?form=WNAMSH&entity=local_vdpid%3A7408305797928583169&collection=point.28.926908_77.640663_Meerut%20Institute%20of%20Technology%2C%20Uttar%20Pradesh%2C%20India" 
+       target="_blank" style="text-decoration: none;">
+       <button style="padding: 10px 20px; font-size: 15px;">View on Map</button>
+    </a>
+  </section>
+
+  <header>
+    <h1>Pick and Drop Service</h1>
+  </header>
+
+  <section id="pickup-drop-form">
+    <h2>Schedule a Pick and Drop</h2>
+    <form id="pickDropForm">
+      <label for="pickupAddress">Pickup Address:</label>
+      <input type="text" id="pickupAddress" name="pickupAddress" placeholder="Enter pickup address" required>
+
+      <label for="dropAddress">Drop-off Address:</label>
+      <input type="text" id="dropAddress" name="dropAddress" placeholder="Enter drop-off address" required>
+
+      <label for="pickupTime">Preferred Pickup Time:</label>
+      <input type="time" id="pickupTime" name="pickupTime" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="tracking">
+    <h2>Track Your Pickup</h2>
+    <div id="map"></div>
+    <p id="trackingStatus">Tracking will appear here once scheduled.</p>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div id="faq-container">
+      <div class="faq-item">
+        <h3>What is Food Waste Solutions? <span class="toggle">+</span></h3>
+        <p class="faq-content">Food Waste Solutions helps reduce food wastage by connecting surplus food to those in need.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How can I donate food? <span class="toggle">+</span></h3>
+        <p class="faq-content">You can donate food by filling the form in the "Donate Food" section.</p>
+      </div>
+    </div>
+  
+    <form id="faq-form">
+      <h3>Add Your Question</h3>
+      <label for="userQuestion">Question:</label>
+      <input type="text" id="userQuestion" name="userQuestion" placeholder="Enter your question" required>
+  
+      <label for="userAnswer">Answer:</label>
+      <textarea id="userAnswer" name="userAnswer" placeholder="Enter the answer" rows="3" required></textarea>
+  
+      <button type="button" onclick="addFaq()">Add Question</button>
+    </form>
+  </section>
+  
+  
+
+  <!-- Social Media Links -->
+  <section id="social-media">
+    <h2>Follow Us</h2>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Food Waste Solutions. All rights reserved.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
